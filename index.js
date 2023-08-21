@@ -102,11 +102,11 @@ function editTask(index) {
 }
 
 function attachCheckboxChangeEvent(checkbox, task, save) {
-    checkbox.addEventListener('change', () => {
-      task.completed = checkbox.checked;
-      save();
-    });
-  }
+  checkbox.addEventListener('change', () => {
+    task.completed = checkbox.checked;
+    save();
+  });
+}
 
 // Function to render the tasks list
 function renderTasks() {
@@ -167,12 +167,12 @@ function saveAndRender() {
 
 // Function to handle the "Clear all completed" button
 function setupClearButton(tasks, updateIndexes, saveAndRender) {
-    tasks = tasks.filter((task) => !task.completed);
-    updateIndexes();
-    saveAndRender();
-  
-    return tasks; // Return the updated tasks array
-  }
+  tasks = tasks.filter((task) => !task.completed);
+  updateIndexes();
+  saveAndRender();
+
+  return tasks; // Return the updated tasks array
+}
 
 // Function to create a new task object
 function addTask(description) {
