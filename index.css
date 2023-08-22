@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+}
+
+:root {
+  --white: #fff;
+}
+
+/* Containers */
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  margin: 20% 20% 0 20%;
+  min-width: 200px;
+}
+
+.tdl-container {
+  box-shadow: 15px 16px 17px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+.tdl-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 3%;
+}
+
+.tdl-heading h1 {
+  font-size: 18px;
+}
+
+/* button */
+button {
+  border: none;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-refresh {
+  transform: rotate(90deg);
+}
+
+.btn-refresh:hover {
+  cursor: pointer;
+  color: rgb(52, 52, 52);
+}
+
+.tdl-clear button {
+  background-color: inherit;
+  font-size: 16px;
+}
+
+/* Line */
+hr {
+  border: none;
+  height: 1.3px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* List Adding */
+.tdl-add {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 3%;
+}
+
+.tdl-add input {
+  font-style: italic;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  min-width: 200px;
+  padding-left: 1%;
+}
+
+.tdl-add input:focus {
+  outline: none;
+}
+
+.tdl-add button {
+  transform: rotate(90deg);
+}
+
+.tdl-add button:hover {
+  cursor: pointer;
+  color: rgb(52, 52, 52);
+}
+
+/* List Item */
+.tdl-item {
+  padding: 2% 3%;
+  border: 1px solid black;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.check-box {
+  margin-right: 5%;
+}
+
+.tdl-list-txt {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  border: none;
+  width: 87%;
+}
+
+.option-icon {
+  float: right;
+}
+
+.option-icon button:hover {
+  cursor: move;
+}
+
+.trash-can-icon {
+  font-size: 1.3rem;
+  background-color: bisque;
+}
+
+.fa-trash-can {
+  cursor: pointer;
+}
+
+/* transition */
+.tdl-item-transition {
+  transition: background-color 0.5s ease;
+}
+
+.tdl-description-transition {
+  transition: background-color 0.5s ease;
+}
+
+/* Clear Btn */
+.tdl-clear {
+  padding: 4% 3%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(244, 244, 244);
+}
+
+.tdl-clear button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(52, 52, 52);
+}
